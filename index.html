@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="containerr">
+        <splash id="splash" class="splash">
+          <img src="./photo_2024-01-31_10-02-54.jpg" alt="" class="img" />
+        </splash>
+        <h2>Ro`yxatdan o`tish</h2>
+        <div class="input">
+          <input type="text" name="Name" placeholder="Name" />
+          <input type="number" name="Number" placeholder="Number" />
+          <input type="password" name="Password" placeholder="Password" />
+        </div>
+        <button onclick="Openn()">SIGN UP</button>
+        <div class="border"></div>
+        <button onclick="Open()">LOG IN</button>
+      </div>
+      <div class="containerrr" id="containerrr">
+        <h2>xodimlar ro`yxati</h2>
+        <div class="input">
+          <input type="text" placeholder="bekicom" />
+          <input type="password" name="Password" placeholder="Password" />
+        </div>
+        <button onclick="Openn()">LOG IN</button>
+        <div class="border"></div>
+        <button onclick="Close()">SIGN UP</button>
+      </div>
+      <div class="containerrrr" id="containerrrr">
+        <div class="buttons">
+          <button class="buttons_child" onclick="Opennn()">zakas berish</button>
+          <button class="buttons_child2" onclick="Closee()">
+            Back to LOG IN
+          </button>
+        </div>
+        <div class="text">
+          <img src="./Без названия.png" alt="" />
+          <img src="./image_processing20210627-9645-edgtr9.png" alt="" />
+          <img src="./Heart_icon_red_hollow.svg.png" alt="" />
+          <img src="./user.svg" alt="" />
+        </div>
+      </div>
+      <div class="container5" id="container5">
+        <div class="count">
+          <div class="borders">
+            <div class="bord"></div>
+            <div class="bord1"></div>
+            <div class="bord"></div>
+            <div class="bord1"></div>
+          </div>
+          <button class="count_button" onclick="Closeee()">BACK</button>
+        </div>
+        <div class="count2">
+          <button class="count2_button">joylar royxati</button>
+          <button class="count2_button2">olib ketishga</button>
+        </div>
+        <div class="count3">
+          <div class="box">
+            <h5>1-stol</h5>
+            <h5>6-kishilik</h5>
+          </div>
+          <div class="box">
+            <h5>2-stol</h5>
+            <h5>6-kishilik</h5>
+          </div>
+          <div class="box">
+            <h5>3-stol</h5>
+            <h5>6-kishilik</h5>
+          </div>
+        </div>
+        <div class="count3">
+          <div class="box">
+            <h5>4-stol</h5>
+            <h5>8-kishilik</h5>
+          </div>
+          <div class="box">
+            <h5>5-stol</h5>
+            <h5>8-kishilik</h5>
+          </div>
+          <div class="box">
+            <h5>6-stol</h5>
+            <h5>8-kishilik</h5>
+          </div>
+        </div>
+        <div class="count3">
+          <div class="box">
+            <h5>7-stol</h5>
+            <h5>10-kishilik</h5>
+          </div>
+          <div class="box">
+            <h5>8-stol</h5>
+            <h5>10-kishilik</h5>
+          </div>
+          <div class="box">
+            <h5>9-stol</h5>
+            <h5>10-kishilik</h5>
+          </div>
+        </div>
+        <div class="text">
+          <img src="./Без названия.png" alt="" />
+          <img src="./image_processing20210627-9645-edgtr9.png" alt="" />
+          <img src="./Heart_icon_red_hollow.svg.png" alt="" />
+          <img src="./user.svg" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const splash = document.querySelector("#splash");
+      setTimeout(() => splash.remove(), 2000);
+
+
+      const Containerrr = document.getElementById("containerrr");
+      const Open = () => {
+        Containerrr.style.transform = "translate(0px)";
+      };
+      const Close = () => {
+        Containerrr.style.transform = "translate(2000px)";
+      };
+
+
+      const Containerrrr = document.getElementById("containerrrr");
+      const Openn = () => {
+        Containerrrr.style.transform = "translate(0px)";
+      };
+      const Closee = () => {
+        Containerrrr.style.transform = "translate(2000px)";
+      };
+
+
+      const Container5 = document.getElementById("container5");
+      const Opennn = () => {
+        Container5.style.transform = "translate(0px)";
+      };
+      const Closeee = () => {
+        Container5.style.transform = "translate(2000px)";
+      };
+    </script>
+  </body>
+</html>
